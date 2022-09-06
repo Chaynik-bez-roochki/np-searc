@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef0f0;
+}
+
+.cityAll, .warehousesAll {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.cityAll, .warehousesAll::-ms-expand {
+  display: none;
+}
+
+.form-group {
+  width: 400px;
+  margin: 50px auto;
+  padding: 0px 0px 20px 0px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px 20px 5px 5px;
+  box-shadow: 0px 10px 10px #bebebe;
+}
+.form-group .form-head {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 5px 15px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #ED1C24;
+}
+.form-group .form-head .np-logo {
+  transition: all 0.3s ease-in-out;
+}
+.form-group .form-head .np {
+  margin-left: 8px;
+}
+.form-group .form-head #noCity, .form-group .form-head #noWarehouses {
+  height: 40px;
+  width: 100%;
+  margin-left: 8px;
+  display: none;
+  align-items: center;
+}
+.form-group .form-head #noCity .line, .form-group .form-head #noWarehouses .line {
+  width: 2px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.form-group .form-head #noCity span, .form-group .form-head #noWarehouses span {
+  margin-left: 10px;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FEFFFF;
+}
+.form-group .search, .form-group .search_warehouses {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.form-group .search input, .form-group .search_warehouses input {
+  width: 100%;
+}
+
+.select-wrapper {
+  margin-top: 10px;
+  padding: 0px 20px;
+}
+
+.result {
+  min-height: 10px;
+  height: auto;
+  background-color: #ED1C24;
+  width: 400px;
+  border-radius: 5px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ED1C24;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 0px auto;
+  padding: 0px 5px;
+  box-shadow: 0px 10px 10px #bebebe;
+}
+.result .result-form {
+  background-color: #ffffff;
+  min-height: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.np-logo:hover {
+  transform: scaleX(-1);
+}
+
+.np-logo:in-range {
+  transform: scaleX(-1);
+}/*# sourceMappingURL=mystyle.css.map */

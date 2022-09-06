@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <div class="form-group">
+    <div class="form-head">
+      <img class="np-logo" src="./img/NP logo.svg" height="40px" >
+      <img class="np" src="./img/NP.svg" height="29px">
+      <div class="noCity" id="noCity" >
+        <div class="line"></div>
+        <span> ИЗВИНИТЕ! <br> мы такого не знаем </span>
+      </div>
+      <div class="noWarehouses" id="noWarehouses" >
+        <div class="line"></div>
+        <span> ИЗВИНИТЕ! <br> там нет отделений </span>
+      </div>
+    </div>
+    
+    <div class="search">
+      <input type="text" placeholder="Ваш город" id="citySearch" >
+    </div>
+    <form name="citySearchForm" class="citySearchForm">
+      <div class="select-wrapper">
+      <select name="city" class="cityAll" id="" size="5">
+            <option value="000">-- Выберете город --</option>
+      </select>
+      </div>
+    </form>
+    <div class="search_warehouses">
+      <input type="text" placeholder="Введите адрес отделения" id="warehousesSearch" >
+    </div>
+    <form name="warehousesSearchForm">
+      <div class="select-wrapper">
+        <select name="warehouses" class="warehousesAll" id="" size="5">
+            <option value="000">-- Выберете отделение --</option>
+        </select>
+        </div>
+      </form>
+  </div>
+
+<div class="result">
+  <div class="result-form">
+    <span id="adressCity"></span>
+    <span id="adressWarehouses"></span>
+  </div>
+</div>
+
+
+
+    <script src="./js/city.js" ></script>
+    <script src="./js/getwarehouses.js" ></script>
+    
+</body>
+</html>
+
+
